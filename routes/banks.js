@@ -10,10 +10,10 @@ router.get('/router', (req, res) =>{
 
 function connection(){
     return mysql.createConnection({
-        host: 'sql12.freemysqlhosting.net',
-        user: 'sql12265346',
-        password: '6lv1iSWfWU',
-        database: 'complain'
+        host: 'ec2-75-101-138-165.compute-1.amazonaws.com',
+        user: 'clcselimowewdn',
+        password: '9425af04e97aa4b064f2f09070bcd371f539a2658ab0aa34b1a6ce01b819ef8b',
+        database: 'deajfqv663lsc2'
     });
 }
 
