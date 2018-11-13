@@ -10,9 +10,9 @@ router.get('/router', (req, res) =>{
 
 function connection(){
     return mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
+        host: 'sql12.freemysqlhosting.net',
+        user: 'sql12265346',
+        password: '6lv1iSWfWU',
         database: 'complain'
     });
 }
