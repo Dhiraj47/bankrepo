@@ -59,7 +59,7 @@ router.post('/allBankName', (req, res) =>{
 router.post('/allStateName', (req, res) =>{
 
     const getconnection = connection();
-    const query = "Select DISTINCT(state) from `branches` ORDER BY state";
+     const query = "Select state_name from `states` ORDER BY state_name";
 
     getconnection.query(query, (err, rows, fields) =>{
         if(err){
