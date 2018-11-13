@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0">
+    <meta name="description" content="Find IFSC, MICR Codes, Address, All Bank Branches in India, for NEFT, RTGS, ECS: Find IFSC, MICR Codes, Address, All Bank Branches in India, for NEFT, RTGS, ECS Transactions">
+<meta name="keywords" content="Find IFSC, MICR Codes, Address, All Bank Branches in India, for NEFT, RTGS, ECS: , IFSC, MICR, NEFT, RTGS, ECS">
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+    body {
+        font-family: 'Roboto';font-size: 15px;
+    }
+    select option{
+        font-size: 15px;
+    }
+    </style>
+    <script src="js/jquery.min.js"></script>
+	<title>Bank Details</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Bank Details</span>
+    </nav>
+    <div class="container border mt-3 p-3">
+            <h3 class="text-center">LOCATE ANY BANK BRANCH IN INDIA</h3>
+            <hr>
+        <div class="row">
+            <div class="col-xl-6">
+                    <input id='IFSC' name="IFSC" type="text" class="form-control " placeholder="Search By IFSC Code"><br>
+                    <input type="submit" value="Search" class="btn btn-primary" onclick="searchIFSC()">
+
+                    <br><br><h6>OR &nbsp;(Custom Search)</h6><hr>
+
+                    <form action='/search' method="POST"> 
+                        <label>Select Bank Name<br>
+                            <select class="form-control" id='bankName' onchange="getClear()"></select></label><br>
+                        <label>State<br>
+                            <select class="form-control"  id='state' onchange="getDist()"></select></label><br>
+                        <label>District<br>
+                            <select class="form-control"  id='district' onchange="getBranch()">
+                                <option>--SELECT--</option>
+                            </select></label><br>
+                        <label>Branch<br>
+                            <select class="form-control"  id='branch' onchange="getresult()">
+                                    <option>--SELECT--</option>
+                            </select></label><br>
+                        
+                    </form>
+                </div>
+                <div class="col-xl-6">
+                        <div id='result' class="container border-left p-3">
+    
+                            </div>
+                    </div>
+            </div>
+            
+       
+    </div>
+    
+    
+<script type='text/javascript' src="js/myJS.js"></script>
+</body>
+</html>
