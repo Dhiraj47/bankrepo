@@ -15,7 +15,7 @@ $(document).ready(function(){
         console.table(data);
         $state.append('<option>--SELECT--</option>');
         $.each(data, function(i, item){
-            $state.append('<option>'+item.state+'</option>');
+            $state.append('<option>'+item.state_name+'</option>');
         }); 
     });
 
